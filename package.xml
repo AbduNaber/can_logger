@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>can_logger</name>
+  <version>0.0.0</version>
+  <description>The can_logger package</description>
+
+  <maintainer email="abdu@todo.todo">abdu</maintainer>
+
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  
+    <build_depend>socketcan_interface</build_depend>
+  <build_export_depend>socketcan_interface</build_export_depend>
+  <exec_depend>socketcan_interface</exec_depend>
+
+  <export>
+   
+  </export>
+</package>

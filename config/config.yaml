@@ -1,0 +1,12 @@
+DURATION : 30                           # The duration of the logging process in seconds.
+CAN_INTERFACE : "can0"                  # The CAN interface to be used.
+CAN_HZ : 1000                           # The frequency of the CAN channel.
+
+EVENT_FRAME:                            # The event frame to be detected.                                          
+    CAN_ID : 1                          # The CAN ID of the event frame.
+    SIGNAL:                             # The signal of the event frame.
+        START_BIT: 0                    # The start bit of the signal.
+        LENGTH: 8                       # The length of the signal.
+        SCALE: 1.0                      # The scale of the signal.
+        OFFSET: 0.0                     # The offset of the signal.
+        VALUE: 1.0                      # The value of the signal.
