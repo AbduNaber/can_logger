@@ -4,14 +4,10 @@ project(can_logger)
 
 find_package(catkin REQUIRED)
 find_package(yaml-cpp REQUIRED)
-find_package(catkin REQUIRED COMPONENTS
 
-    socketcan_interface
-)
 
 catkin_package(
     DEPENDS yaml-cpp
-    CATKIN_DEPENDS socketcan_interface
 )
 find_package(yaml-cpp REQUIRED)
 
@@ -22,7 +18,7 @@ include_directories(
 )
 
 add_executable(can_logger_node src/can_logger.cpp)
-target_link_libraries(can_logger_node ${YAML_CPP_LIBRARIES} ${catkin_LIBRARIES} pthread)
+target_link_libraries(can_logger_node ${YAML_CPP_LIBRARIES} pthread)
 target_include_directories(can_logger_node PRIVATE ${YAML_CPP_INCLUDE_DIRS})
 install(TARGETS
     can_logger_node
